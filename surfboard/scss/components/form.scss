@@ -12,7 +12,11 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
+
+  &--textarea {
+    margin-bottom: 30px;
+  }
 }
 
 .form__block {
@@ -24,17 +28,21 @@
   }
 }
 
+.form__title {
+  line-height: 1.22;
+  margin-bottom: 2px;
+}
+
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 12px;
+  padding: 15px 12px;
   border: solid 3px transparent;
   border-radius: 4px;
 
   &--textarea {
-  height: 152px;
-  resize: none;
-  margin-bottom: 16px;
+    height: 152px;
+    resize: none;
   }
 
   &:focus {
@@ -46,6 +54,19 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__controls-radio {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 

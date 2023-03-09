@@ -1,4 +1,7 @@
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 800;
   padding: 21px 41px;
@@ -6,7 +9,7 @@
   border-radius: 100px;
   line-height: 1;
   border: none;
-  transition: 0.3s;
+  transition: background 0.3s, color 0.3s;
   cursor: pointer;
 
   &--yellow {
@@ -25,6 +28,7 @@
       text-transform: none;
       font-weight: 400;
       font-size: 18px;
+      padding: 21px 18px;
 
       &:hover {
         color: #000;

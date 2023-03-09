@@ -1,5 +1,6 @@
 .feature {
   display: flex;
+  align-items: center;
 }
 
 .feature__icon {
@@ -10,5 +11,6 @@
 
 .feature__text {
   font-size: 16px;
+  line-height: 1.12;
   width: 90px;
 }

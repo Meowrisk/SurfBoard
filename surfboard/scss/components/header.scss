@@ -11,10 +11,15 @@
 
 .menu__item {
   margin-right: 22px;
+  font-weight: 700;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.contacts {
+  font-style: normal;
 }
 
 .contacts__phone {

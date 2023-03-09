@@ -1,7 +1,6 @@
 .hero {
-  background: url('../../img/decor/beach.png') 0 0 / cover no-repeat;
-  height: 100vh;
-  min-height: 650px;
+  background: url('../../img/decor/beach.png') 0 0 / cover no-repeat #1968B1;
+  ;
   color: #fff;
 }
 
@@ -19,7 +18,7 @@
 
 .hero__title {
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 1.2;
   font-weight: 700;
   margin-bottom: 17px;
   text-transform: uppercase;
