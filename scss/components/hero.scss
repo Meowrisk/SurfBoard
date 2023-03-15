@@ -1,0 +1,40 @@
+.hero {
+  background: url('../img/decor/beach.png') 0 0 / cover no-repeat #1968B1;
+  color: #fff;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(28px) 0 rem(66px);
+}
+
+.hero__text-section {
+  width: 46%;
+
+  @include tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero__title {
+  font-size: rem(48px);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: rem(17px);
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  font-size: rem(21px);
+  margin-bottom: rem(39px);
+  padding-right: 10%;
+}

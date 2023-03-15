@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+}
+.form__col {
+  flex: 1;
+  margin-right: rem(27px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: rem(13px);
+
+  &--textarea {
+    margin-bottom: rem(30px);
+  }
+}
+
+.form__block {
+  flex: 1;
+  margin-right: rem(16px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__title {
+  line-height: 1.22;
+  margin-bottom: rem(2px);
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: rem(15px) rem(12px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(4px);
+
+  &--textarea {
+    height: rem(152px);
+    resize: none;
+  }
+
+  &:focus {
+    border-color: $yellow;
+    outline: none;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: rem(19px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__controls-radio {
+  margin-right: rem(15px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+

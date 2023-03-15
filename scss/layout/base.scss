@@ -1,0 +1,74 @@
+html {
+  font-size: $base-fz;
+
+  @include tablet {
+    font-size: $base-fz - 1px;
+  }
+
+  @include phone {
+    font-size: $base-fz - 2px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Alegreya Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.42;
+  position: relative;
+  color: $gray;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: $container-width;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+  }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
