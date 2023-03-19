@@ -1,6 +1,23 @@
 .hero {
   background: url('../img/decor/beach.png') 0 0 / cover no-repeat #1968B1;
   color: #fff;
+
+  @include tablet {
+    background-position: rem(-816px) rem(63px);
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 91px;
+      display: block;
+      background: #1968B1;
+      z-index: 0;
+    }
+  }
 }
 
 .hero__container {
@@ -31,10 +48,19 @@
   font-weight: 700;
   margin-bottom: rem(17px);
   text-transform: uppercase;
+
+  @include phone {
+    line-height: 0.9;
+    margin-bottom: rem(4px);
+  }
 }
 
 .hero__subtitle {
   font-size: rem(21px);
   margin-bottom: rem(39px);
   padding-right: 10%;
+
+  @include tablet {
+  padding: 0;
+  }
 }

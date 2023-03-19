@@ -10,11 +10,24 @@
 
 .reviews__display-inner {
   display: flex;
+
+  
+  @include tablet {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: rem(253px);
   height: rem(264px);
+
+  
+  @include tablet {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__avatar-img {
@@ -28,6 +41,11 @@
   margin-left: rem(36px);
   padding-top: rem(28px);
   max-width: rem(463px);
+
+  @include tablet {
+    margin-left: 0;
+    max-width: rem(617px);;
+  }
 }
 
 .reviews__title {

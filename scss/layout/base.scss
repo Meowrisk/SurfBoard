@@ -2,11 +2,11 @@ html {
   font-size: $base-fz;
 
   @include tablet {
-    font-size: $base-fz - 1px;
+    // font-size: $base-fz - 1px;
   }
 
   @include phone {
-    font-size: $base-fz - 2px;
+    // font-size: $base-fz - 2px;
   }
 }
 

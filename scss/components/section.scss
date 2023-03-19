@@ -33,5 +33,14 @@
   color: $black;
   text-align: center;
   text-transform: uppercase;
+
+  @include phone {
+    font-size: rem(40px);
+    line-height: 0.9;
+  }
+}
+
+.map-section {
+  background: url('../img/decor/map.png') 0 0 / cover no-repeat;
 }
 

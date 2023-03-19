@@ -9,6 +9,8 @@ $yellow: #FFD517;
 
 //z-indexes 
 $z-fixed-menu: 100;
+$z-header-tablet: 1;
+$z-hamburger: 2;
 
 //breakpoints
 $tablet: 768px;
@@ -18,13 +20,14 @@ $phone: 480px;
 @import 'layout/normalize.scss';
 
 //setups
+@import './components/media.scss';
 @import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap';
 @import './layout/base.scss';
-@import './components/media.scss';
 
 //components
 @import './components/hero.scss';
 @import './components/header.scss';
+@import './components/contacts.scss';
 @import './components/features.scss';
 @import './components/feature';
 @import './components/btn.scss';
@@ -38,3 +41,7 @@ $phone: 480px;
 @import './components/radio.scss';
 @import './components/fixed-menu.scss';
 @import './components/order-section.scss';
+@import './components/hamburger.scss';
+@import './components/footer.scss';
+@import './components/pointer.scss';
+@import './components/socials.scss';

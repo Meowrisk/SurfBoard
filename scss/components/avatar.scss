@@ -1,18 +1,32 @@
 .avatar {
   width: rem(74px);
   height: rem(74px);
-  border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   margin-right: rem(6px);
 
+  @include phone {
+    width: rem(64px);
+    height: rem(64px);
+    margin-right: rem(10px);
+  }
+
   &:last-child {
     margin-right: 0;
   }
 
-  &--active {
-    border-color: $yellow;
+  &--active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    border: rem(6px) solid $yellow;
+    border-radius: 50%;
+    z-index: 2;
   }
 }
 
@@ -30,4 +44,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: center;
 }

@@ -10,4 +10,12 @@
 
 .headline__subtitle {
   padding: 0 27%;
+
+  @include tablet {
+    padding: 0 20%;
+  }
+
+  @include phone {
+    padding: 0;
+  }
 }

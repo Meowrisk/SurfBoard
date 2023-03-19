@@ -1,5 +1,5 @@
 @function rem($px) {
-  @return calc ($px / $base-fz) + 0 rem;
+  @return $px / $base-fz + 0rem;
 }
 
 @mixin tablet {

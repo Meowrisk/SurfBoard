@@ -1,5 +1,10 @@
 .benefit {
   text-align: center;
+
+  @include phone {
+    display: flex;
+    text-align-last: left;
+  }
 }
 
 .benefit__img-wrapper {
@@ -11,19 +16,18 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(13px);
+
+  @include phone {
+    margin-bottom: 0;
+    margin-right: rem(12px);
+  }
 }
 
-.benefit__img {
-  height: rem(68px);
-  width: rem(68px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+.benefit__text {
 
-.benefit__img--fit {
-  width: rem(46px);
+  @include phone {
+    max-width: rem(290px);
+  }
 }
 
 .benefit__title {
@@ -37,4 +41,8 @@
 .benefit__desc {
   font-weight: 300;
   line-height: 1.22;
+
+  @include phone {
+    text-align: left;
+  }
 }

@@ -1,11 +1,25 @@
 .form {
   display: flex;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 0 13%;
+  }
+
+  @include phone {
+    padding: 0;
+  }
 }
+
 .form__col {
   flex: 1;
   margin-right: rem(27px);
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
     margin-right: 0;
   }
 }
@@ -40,9 +54,17 @@
   border: solid rem(3px) transparent;
   border-radius: rem(4px);
 
+  @include tablet {
+    padding: rem(3px) rem(12px);
+  }
+
   &--textarea {
     height: rem(152px);
     resize: none;
+
+    @include tablet {
+      height: rem(82px);
+    }
   }
 
   &:focus {
@@ -58,6 +80,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include phone {
+    justify-content: center;
   }
 }
 

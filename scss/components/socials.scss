@@ -1,0 +1,15 @@
+.socials__img {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #B3B3B3;
+  margin-right: rem(14px);
+  transition: fill 0.3s;
+
+  &:last-child {
+    margin-right: rem(0);
+  }
+
+  &:hover {
+    fill: $black;
+  }
+}

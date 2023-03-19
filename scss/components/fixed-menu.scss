@@ -3,6 +3,10 @@
   position: fixed;
   top: 20%;
   right: 3%;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .fixed-menu__item {

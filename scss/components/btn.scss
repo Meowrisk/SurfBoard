@@ -35,4 +35,9 @@
         background: transparent;
       }
     }
+
+    @include phone {
+      font-size: 19px;
+      padding: rem(21px) rem(36px)
+    }
 }
