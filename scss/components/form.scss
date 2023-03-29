@@ -3,11 +3,12 @@
 
   @include tablet {
     flex-direction: column;
-    padding: 0 13%;
+    max-width: 466px;
+    margin: 0 auto;
   }
 
   @include phone {
-    padding: 0;
+
   }
 }
 
@@ -28,8 +29,17 @@
   display: flex;
   margin-bottom: rem(13px);
 
+  
+  @include tablet {
+    margin-bottom: rem(14px);
+  }
+
   &--textarea {
     margin-bottom: rem(30px);
+
+    @include tablet {
+      margin-bottom: rem(19px);
+    }
   }
 }
 
@@ -55,7 +65,7 @@
   border-radius: rem(4px);
 
   @include tablet {
-    padding: rem(3px) rem(12px);
+    padding: rem(4px) rem(12px);
   }
 
   &--textarea {

@@ -41,3 +41,11 @@
       padding: rem(21px) rem(36px)
     }
 }
+
+.form__btns {
+  display: flex;
+
+  @include tablet {
+    justify-content: center;
+  }
+}

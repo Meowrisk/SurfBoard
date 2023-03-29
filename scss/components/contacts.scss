@@ -1,11 +1,25 @@
 .contacts {
   font-style: normal;
+
+  @include phone {
+    margin-bottom: rem(19px);
+  }
 }
 
 .contacts__phone.header__contacts__phone {
 
   @include tablet {
     display: none;
+  }
+}
+
+.contacts__address {
+  font-size: rem(21px);
+  line-height: 1.14;  
+
+  @include phone {
+    display: block;
+    margin-bottom: rem(10px);
   }
 }
 
@@ -29,5 +43,9 @@
   
   @include tablet {
     display: flex;
+  }
+
+  @include phone {
+    justify-content: center;
   }
 }

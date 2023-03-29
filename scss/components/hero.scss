@@ -1,9 +1,9 @@
 .hero {
-  background: url('../img/decor/beach.png') 0 0 / cover no-repeat #1968B1;
+  background: url('../img/decor/beach.png') center / cover no-repeat #1968B1;
   color: #fff;
 
   @include tablet {
-    background-position: rem(-816px) rem(63px);
+    background-position-y: rem(91px);
 
     &:after {
       content: '';
@@ -49,18 +49,31 @@
   margin-bottom: rem(17px);
   text-transform: uppercase;
 
+  @include tablet {
+    margin-bottom: rem(9px);
+  }
+
   @include phone {
     line-height: 0.9;
-    margin-bottom: rem(4px);
+    font-size: rem(40px);
+    margin-bottom: rem(12px);
   }
 }
 
 .hero__subtitle {
   font-size: rem(21px);
+  line-height: 1.19;
   margin-bottom: rem(39px);
   padding-right: 10%;
 
   @include tablet {
   padding: 0;
+  margin-bottom: rem(44px);
+  }
+
+  @include phone {
+    font-size: rem(18px);
+    line-height: 1.1;
+    margin-bottom: rem(43px);
   }
 }
