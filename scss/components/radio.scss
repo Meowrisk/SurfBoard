@@ -10,10 +10,9 @@
   &--checkbox {
     .radio__visible {
       border-radius: rem(4px);
-
       &:before {
         content: '';
-        background: url('../../img/icons/check-icon.png') center center no-repeat;
+        background: none;
       }
     }
   }
@@ -23,7 +22,10 @@
   display: none;
 
   &:checked ~ .radio__visible {
-    &::before {
+    & svg {
+      display: block;
+    }
+    &:before {
       display: block;
     }
   }
@@ -49,6 +51,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.radio__visible-icon {
+  display: none;
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .radio__space {

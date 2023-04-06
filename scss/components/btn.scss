@@ -37,7 +37,7 @@
     }
 
     @include phone {
-      font-size: 19px;
+      font-size: rem(19px);
       padding: rem(21px) rem(36px)
     }
 }

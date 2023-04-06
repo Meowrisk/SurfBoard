@@ -7,7 +7,7 @@
   
   @include tablet {
     display: block;
-    margin-right: 18px;
+    margin-right: rem(18px);
   }
 
   @include phone {

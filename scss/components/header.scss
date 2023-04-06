@@ -2,8 +2,11 @@
   display: flex;
   align-items:flex-start;
   justify-content: space-between;
-}
 
+  @include tablet {
+    align-items: center;
+  }
+}
 
 .header__contacts {
   margin-top: rem(10px);
