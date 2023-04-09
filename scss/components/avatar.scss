@@ -5,6 +5,9 @@
   overflow: hidden;
   position: relative;
   margin-right: rem(6px);
+  outline: 6px solid transparent;
+  outline-offset: -5px;
+  transition: outline .3s;
 
   @include phone {
     width: rem(64px);

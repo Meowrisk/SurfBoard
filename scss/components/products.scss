@@ -8,7 +8,14 @@
     @include phone {
         padding: 0;
     }
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 }
+
 
 .product__container {
     display: flex;

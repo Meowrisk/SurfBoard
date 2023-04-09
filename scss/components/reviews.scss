@@ -22,6 +22,20 @@
   }
 }
 
+.reviews__item {
+  display: flex;
+  opacity: 0;
+  left: -99999px;
+  transition: opacity .3s;
+  position: absolute;
+
+  &--active{
+    opacity: 1;
+    left: initial;
+    position: relative;
+  }
+}
+
 .reviews__display-inner {
   display: flex;
 
