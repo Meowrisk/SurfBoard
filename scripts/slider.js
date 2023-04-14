@@ -11,4 +11,4 @@ $('.product-slider__arrow--prev').click(e => {
 $('.product-slider__arrow--next').click(e => {
     e.preventDefault();
     slider.goToNextSlide();
-})
+});
